@@ -185,7 +185,6 @@ li {
   position: relative; /* used to set photo's overlay position */
 }
 
-
 /* ---- Photo Overlay ---- */
 
 .photo-overlay {
@@ -195,7 +194,8 @@ li {
   right: 0;
   bottom: 0;
   left: 0;
-  display: flex; /* using flex for ease of text centering */
+  /*display: flex; !* using flex for ease of text centering *!*/
+  display: none;
   flex-direction: column;
   justify-content: center;
   align-items: center;
