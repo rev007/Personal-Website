@@ -12,3 +12,18 @@
     opacity: 1;
 }
 
+/* =================================
+  Button Transitions
+==================================== */
+
+.button {
+    opacity: 0;
+    transition-property: opacity;
+    transition-duration: .5s;
+    transition-delay: .2s;
+}
+
+.photo-overlay:hover .button {
+    opacity: 1;
+}
+
