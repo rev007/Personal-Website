@@ -1,5 +1,34 @@
 /* =================================
-  Photo Overlay Transition
+  Image Transitions
+==================================== */
+
+.photo, img {
+    transition: .5s;
+}
+
+.photo:hover {
+    transform: scale(1.1);
+}
+
+.photo img {
+    transform-origin: 0 0;
+}
+
+.photo .resume {
+    transform-origin: 100% 0;
+}
+
+.photo:hover img {
+    transform: scale(1.24);
+}
+
+.photo:hover .resume {
+    transform: scale(1.35);
+}
+
+
+/* =================================
+  Overlay Transitions
 ==================================== */
 
 .photo-overlay {
@@ -9,6 +38,7 @@
 
 .photo-overlay:hover {
     opacity: 1;
+    /*transform: scale(1.2);*/
 }
 
 /* =================================

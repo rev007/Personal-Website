@@ -183,6 +183,7 @@ li {
 
 .photo {
   position: relative; /* used to set photo's overlay position */
+  overflow: hidden; /* prevents transforms outside of the container */
 }
 
 /* ---- Photo Overlay ---- */
@@ -198,7 +199,16 @@ li {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background: rgba(0,0,0, .65);
+  background: rgba(0,0,0, .5);
+}
+
+/* adjustments for images that are already dark */
+.light {
+  background: rgba(0,0,0, .4);
+}
+
+.lighter {
+  background: rgba(0,0,0, .3);
 }
 
 #gallery .photo-overlay p {
