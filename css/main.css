@@ -202,13 +202,18 @@ li {
   background: rgba(0,0,0, .5);
 }
 
-/* adjustments for images that are already dark */
+/* overlay adjustments for images that are already dark */
 .light {
   background: rgba(0,0,0, .4);
 }
 
 .lighter {
   background: rgba(0,0,0, .3);
+}
+
+.slide .photo-overlay {
+  opacity: 1;
+  background: #345d88;
 }
 
 #gallery .photo-overlay p {

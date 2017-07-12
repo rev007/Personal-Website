@@ -1,5 +1,5 @@
 /* =================================
-  Image Transitions
+  Image Transitions & Transforms
 ==================================== */
 
 .photo, img {
@@ -38,8 +38,20 @@
 
 .photo-overlay:hover {
     opacity: 1;
-    /*transform: scale(1.2);*/
 }
+
+.slide .photo-overlay {
+    transform: translateX(-100%);
+}
+
+.slide:hover .photo-overlay {
+    transform: translateX(0);
+}
+
+.slide:hover img {
+    transform: translateX(100%);
+}
+
 
 /* =================================
   Button Transitions
@@ -47,7 +59,6 @@
 
 .button {
     opacity: 0;
-    /*transition: opacity .3s .2s, background .4s .3s, box-shadow .5s 0s;*/
     transition: opacity .2s .1s, background .2s .1s, box-shadow .3s 0s;
     transition-timing-function: ease-out;
 }
