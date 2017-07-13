@@ -195,7 +195,7 @@ li {
   right: 0;
   bottom: 0;
   left: 0;
-  display: none; /* don't use overlays on touch devices */
+  /*display: none; !* don't use overlays on touch devices *!*/
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -206,10 +206,6 @@ li {
 .light {
   background: rgba(0,0,0, .4);
 }
-
-/*.lighter {*/
-  /*background: rgba(0,0,0, .3);*/
-/*}*/
 
 .slide .photo-overlay {
   opacity: 1;
