@@ -191,7 +191,6 @@ li {
 .photo-overlay {
   color: #fff;
   position: absolute;
-  z-index: 1000;
   top: 0;
   right: 0;
   bottom: 0;
@@ -208,9 +207,9 @@ li {
   background: rgba(0,0,0, .4);
 }
 
-.lighter {
-  background: rgba(0,0,0, .3);
-}
+/*.lighter {*/
+  /*background: rgba(0,0,0, .3);*/
+/*}*/
 
 .slide .photo-overlay {
   opacity: 1;
