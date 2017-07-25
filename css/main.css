@@ -169,16 +169,18 @@ PAGE PORTFOLIO
 #gallery p {
   margin: 0;
   padding: 5%;
+  /*padding: 13.3px;*/
   font-size: 0.75em;
+  /*line-height: 1.5;*/
   color: #6d6e71;
   text-align: center;
 }
 
 li {
-  display: flex;
-  justify-content:center;
-  align-content:center;
-  flex-direction:column; /* column | row */
+  /*display: flex;*/
+  justify-content: center;
+  align-content: center;
+  flex-direction: column; /* column | row */
 }
 
 .photo {
@@ -215,6 +217,7 @@ li {
 
 #gallery .photo-overlay p {
   font-size: 1em;
+  line-height: 1.5;
   color: #fff;
 }
 
