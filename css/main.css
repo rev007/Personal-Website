@@ -184,6 +184,7 @@ li {
 .photo {
   position: relative; /* used to set photo's overlay position */
   overflow: hidden; /* prevents transforms outside of the container */
+  border-radius: .5em;
 }
 
 /* ---- Photo Overlay ---- */
