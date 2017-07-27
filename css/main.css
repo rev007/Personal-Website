@@ -223,6 +223,19 @@ li {
 
 /* ---- Buttons ---- */
 
+/*.button {*/
+  /*color: #fff;*/
+  /*width: 60%;*/
+  /*font-weight: 700;*/
+  /*display: block;*/
+  /*text-align: center;*/
+  /*text-decoration: none;*/
+  /*background: rgba(74,137,202, .65);*/
+  /*padding: 8px 0;*/
+  /*border-radius: .5em;*/
+  /*position: relative;*/
+/*}*/
+
 .button {
   color: #fff;
   width: 60%;
@@ -230,10 +243,12 @@ li {
   display: block;
   text-align: center;
   text-decoration: none;
-  background: rgba(74,137,202, .65);
-  padding: 8px 0;
   border-radius: .5em;
-  position: relative;
+
+  padding: .3em .8em;
+  background: #58a linear-gradient(hsla(0,0%,100%,.2), transparent);
+  box-shadow: 0 .05em .25em rgba(0,0,0,.5);
+  text-shadow: 0 -.05em .05em rgba(0,0,0,.5);
 }
 
 /*.btn-icon {*/
