@@ -4,15 +4,15 @@
   TWO COLUMN LAYOUT
   *********************/
 
-  #primary {
-    width: 50%;
-    float: left;
-  }
+  /*#primary {*/
+    /*width: 50%;*/
+    /*float: left;*/
+  /*}*/
 
-  #secondary {
-    width: 40%;
-    float: right;
-  }
+  /*#secondary {*/
+    /*width: 40%;*/
+    /*float: right;*/
+  /*}*/
 
   /*********************
   MATH FOR THREE COLUMN LAYOUT
@@ -28,13 +28,13 @@
   PAGE PORTFOLIO
   *********************/
 
-  #gallery li {
-    width: 28.3333%;
-  }
+  /*#gallery li {*/
+    /*width: 28.3333%;*/
+  /*}*/
 
-  #gallery li:nth-child(4n) {
-    clear: left;
-  }
+  /*#gallery li:nth-child(4n) {*/
+    /*clear: left;*/
+  /*}*/
 
   /*********************
   PAGE ABOUT
@@ -86,9 +86,9 @@
 
 }
 
-@media screen and (min-width: 1025px) {
-  .photo-overlay {
-    display: flex; /* using flex for ease of text centering */
-  }
+/*@media screen and (min-width: 1025px) {*/
+  /*.photo-overlay {*/
+    /*display: flex; !* using flex for ease of text centering *!*/
+  /*}*/
 
-}
+/*}*/
