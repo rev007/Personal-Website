@@ -2,6 +2,10 @@
 GENERAL
 *********************/
 
+* {
+	box-sizing: border-box;
+}
+
 body {
   font-family: 'Open Sans', sans-serif; /* falls back to sans-serif if google is down */
 }
@@ -9,6 +13,7 @@ body {
 #wrapper {
   max-width: 940px;
   margin: 0 auto;
+  /* TODO: do you need this much padding? border-box makes your projects shrink a lot */
   padding: 0 5%;
 }
 
