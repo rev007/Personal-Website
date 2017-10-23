@@ -13,8 +13,8 @@ body {
 #wrapper {
   max-width: 940px;
   margin: 0 auto;
-  /* TODO: do you need this much padding? border-box makes your projects shrink a lot */
   padding: 0 5%;
+  clear: both; /* clearing from floated nav elements */
 }
 
 /*#flex-container {*/
@@ -47,7 +47,7 @@ header {
   width: 100%;
 }
 
-#logo {
+#card {
   text-align: center;
   margin: 0;
 }
@@ -139,7 +139,7 @@ nav {
   /*6d6e71*/
 }
 
-/* logo text */
+/* card text */
 h1, h2 {
   color: #fff;
 }

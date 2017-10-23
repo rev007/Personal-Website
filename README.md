@@ -1,4 +1,4 @@
-## Darryn Goldsmith Personal Website ##
+## Personal Website ##
 
 ## October 2017 ##
 
@@ -12,7 +12,7 @@ This project is an overhaul of my old site which is now broken. Improvements wil
 * Create a pleasing aesthetic (color palette, typography, etc.)
 * Introduce a memorable experience through the use of animation
   
-###How to Run
+### How to Run ###
 
 1. Add all of the files to a folder
 2. Open index.html from your favorite browser
