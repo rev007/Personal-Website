@@ -1,0 +1,12 @@
+.photo {
+    background: cornsilk;
+}
+
+.photo:nth-child(even) {
+    background: #a5cee9;
+}
+
+.photo:last-child {
+    /*background: red;*/
+    /*height: 100px;*/
+}
