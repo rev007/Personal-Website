@@ -11,25 +11,14 @@
     /*height: 100px;*/
 }
 
-figure {
-    /*height: 100%;*/
-    text-align: center;
-    /*margin: 1em;*/
-    /*margin: auto;*/
-    /*width: 100%;*/
+.photo {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
 }
 
-/*figure {*/
-    /*height: 100%;*/
-    /*display: flex;*/
-    /*flex-direction: column;*/
-    /*justify-content: space-around;*/
-    /*align-items: center;*/
-/*}*/
-
-figcaption {
-    /*margin: auto;*/
-    /*margin-top: 7px;*/
-    /*display: inline-block;*/
-    /*margin: auto;*/
+.title {
+    /*padding-bottom: 10px;*/
+    line-height: 2.5;
 }

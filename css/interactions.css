@@ -2,35 +2,36 @@
   Image Transitions & Transforms
 ==================================== */
 
-.photo, img {
+.card,
+img {
     transition: .5s;
 }
 
-.photo img {
+.card img {
     transform-origin: 0 0;
 }
 
 /* origin will scale to the word 'resume' on hover */
-.photo .resume {
+.card .resume {
     transform-origin: 100% 0;
 }
 
-.photo:hover {
+.card:hover {
     transform: scale(1.1);
 }
 
 /* scale should cover image caption which is replaced by overlay <h3> */
-.photo:hover img {
+.card:hover img {
     transform: scale(1.24);
 }
 
 /* scale mockup less so it doesn't overlap adjacent card */
-.photo:hover .mockup {
+.card:hover .mockup {
     transform: scale(1.7);
 }
 
 /* scale resume more to do what??? */
-.photo:hover .resume {
+.card:hover .resume {
     transform: scale(1.95);
 }
 
@@ -76,6 +77,6 @@
     box-shadow: 0 0 0 2px rgba(255, 255, 255, .7);
 }
 
-.photo:hover .button {
+.card:hover .button {
     opacity: 1;
 }
