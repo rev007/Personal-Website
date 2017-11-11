@@ -165,15 +165,15 @@ nav a.selected, nav a:hover {
 PAGE PORTFOLIO
 *********************/
 
-#gallery {
-  margin: 0;
-  padding: 0;
-  /*list-style: none; !* removes bullet points from a list *!*/
-  display: flex;
-  flex-wrap: wrap;
-  width: 100%;
-  background-color: #5588aa;
-}
+/*#gallery {*/
+  /*margin: 0;*/
+  /*padding: 0;*/
+  /*list-style: none; */ /* removes bullet points from a list */
+  /*display: flex;*/
+  /*flex-wrap: wrap;*/
+  /*width: 100%;*/
+  /*background-color: #5588aa;*/
+/*}*/
 
 #gallery .photo {
   /*width: 45%;*/
@@ -204,9 +204,18 @@ li {
   /*flex-direction: column; !* column | row *!*/
 }
 
+.color {
+  /*position: relative; !* creating a positioned ancestor for photo-overlay absolute position to refer to *!*/
+  /*display: flex;*/
+  /*flex-direction: column;*/
+  /*align-items: center;*/
+  /*justify-content: center;*/
+}
+
 .photo {
   position: relative; /* used to set photo's overlay position */
   overflow: hidden; /* prevents transforms outside of the container */
+  border: solid #999;
   border-radius: .5em;
 }
 
@@ -222,8 +231,10 @@ li {
   /*display: none; !* don't use overlays on touch devices *!*/
   /*flex-direction: column;*/
   /*justify-content: center;*/
-  align-items: center;
+  /*align-items: center;*/
+  text-align: center;
   background: rgba(0,0,0, .5);
+  padding: .3em;
 }
 
 /* overlay adjustments for images that are already dark */

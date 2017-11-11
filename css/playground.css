@@ -1,12 +1,35 @@
-.photo {
+.color {
     background: cornsilk;
 }
 
-.photo:nth-child(even) {
-    background: #a5cee9;
+.color:nth-child(even) {
+    background: darkseagreen;
 }
 
-.photo:last-child {
+.color:last-child {
     /*background: red;*/
     /*height: 100px;*/
+}
+
+figure {
+    /*height: 100%;*/
+    text-align: center;
+    /*margin: 1em;*/
+    /*margin: auto;*/
+    /*width: 100%;*/
+}
+
+/*figure {*/
+    /*height: 100%;*/
+    /*display: flex;*/
+    /*flex-direction: column;*/
+    /*justify-content: space-around;*/
+    /*align-items: center;*/
+/*}*/
+
+figcaption {
+    /*margin: auto;*/
+    /*margin-top: 7px;*/
+    /*display: inline-block;*/
+    /*margin: auto;*/
 }

@@ -19,14 +19,19 @@
     transform: scale(1.1);
 }
 
-/* scale should cover image title which is replaced by <h3> */
+/* scale should cover image caption which is replaced by overlay <h3> */
 .photo:hover img {
     transform: scale(1.24);
 }
 
-/* scale resume more to cover image title */
+/* scale mockup less so it doesn't overlap adjacent card */
+.photo:hover .mockup {
+    transform: scale(1.7);
+}
+
+/* scale resume more to do what??? */
 .photo:hover .resume {
-    transform: scale(1.35);
+    transform: scale(1.95);
 }
 
 
