@@ -13,7 +13,8 @@ img {
 
 /* origin will scale to the word 'resume' on hover */
 .card .resume {
-    transform-origin: 100% 0;
+    /*transform-origin: 100% 0;*/
+    transform-origin: 100% 100%;
 }
 
 .card:hover {
@@ -32,7 +33,7 @@ img {
 
 /* scale resume more to do what??? */
 .card:hover .resume {
-    transform: scale(1.95);
+    transform: scale(1.65);
 }
 
 

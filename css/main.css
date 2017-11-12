@@ -8,13 +8,17 @@ GENERAL
 
 body {
   font-family: 'Open Sans', sans-serif; /* falls back to sans-serif if google is down */
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
 #wrapper {
   max-width: 940px;
   margin: 0 auto;
   padding: 0 5%;
-  clear: both; /* clearing from floated nav elements */
+  /*clear: both; !* clearing from floated nav elements *!*/
+  flex: 1;
 }
 
 a {
@@ -163,19 +167,19 @@ PORTFOLIO PAGE
 /* ---- Photo Overlay ---- */
 
 .photo-overlay {
-  color: #fff;
   position: absolute;
   top: 0;
   right: 0;
   bottom: 0;
   left: 0;
-  /*display: none; !* don't use overlays on touch devices *!*/
-  /*flex-direction: column;*/
-  /*justify-content: center;*/
-  /*align-items: center;*/
   text-align: center;
+  color: #fff;
   background: rgba(0,0,0, .5);
   padding: .3em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 /* overlay adjustments for images that are already dark */
@@ -192,7 +196,7 @@ PORTFOLIO PAGE
 
 .button {
   color: #fff;
-  width: 50%;
+  /*width: 50%;*/
   font-weight: 700;
   display: block;
   text-align: center;
@@ -232,6 +236,7 @@ PAGE CONTACT
 .contact-info a {
   display: block;
   min-height: 20px;
+  width: fit-content;
   background-repeat: no-repeat;
   background-size: 20px 20px;
   padding: 0 0 0 30px;

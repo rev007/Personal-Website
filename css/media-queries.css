@@ -10,15 +10,15 @@
   TWO COLUMN LAYOUT
   *********************/
 
-  /*#primary {*/
-    /*width: 50%;*/
-    /*float: left;*/
-  /*}*/
+  #primary {
+    width: 50%;
+    float: left;
+  }
 
-  /*#secondary {*/
-    /*width: 40%;*/
-    /*float: right;*/
-  /*}*/
+  #secondary {
+    width: 40%;
+    float: right;
+  }
 
   /*********************
   MATH FOR THREE COLUMN LAYOUT
@@ -73,7 +73,7 @@
     float: left;
     margin-left: 5%;
     text-align: left;
-    width: 45%;
+    /*width: 45%;*/
   }
 
   h1 {

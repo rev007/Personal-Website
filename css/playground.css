@@ -1,15 +1,10 @@
-.color {
-    background: cornsilk;
-}
+/*.color {*/
+    /*background: cornsilk;*/
+/*}*/
 
-.color:nth-child(even) {
-    background: darkseagreen;
-}
-
-.color:last-child {
-    /*background: red;*/
-    /*height: 100px;*/
-}
+/*.color:nth-child(even) {*/
+    /*background: darkseagreen;*/
+/*}*/
 
 .photo {
     height: 100%;
@@ -32,4 +27,5 @@ figure {
 figcaption {
     text-align: center;
     line-height: 2.5;
+    color: #999;
 }
