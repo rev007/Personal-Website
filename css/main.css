@@ -17,7 +17,6 @@ body {
   max-width: 940px;
   margin: 0 auto;
   padding: 0 5%;
-  /*clear: both; !* clearing from floated nav elements *!*/
   flex: 1;
 }
 
@@ -98,7 +97,6 @@ FOOTER
 footer {
   font-size: 0.75em;
   text-align: center;
-  clear: both; /* prevents the footer from floating on both left and right sides */
   padding-top: 50px;
   color: #ccc;
 }
@@ -158,10 +156,34 @@ PORTFOLIO PAGE
   border-radius: .5em;
 }
 
-.title {
-  width: 90%;
-  margin: 0 auto;
+figure {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+figcaption {
   text-align: center;
+  line-height: 2.5;
+  color: #999;
+}
+
+/*.title {*/
+  /*line-height: 2.5;*/
+/*}*/
+
+/*.title {*/
+  /*width: 90%;*/
+  /*margin: 0 auto;*/
+  /*text-align: center;*/
+/*}*/
+
+.photo {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
 }
 
 /* ---- Photo Overlay ---- */
@@ -196,7 +218,6 @@ PORTFOLIO PAGE
 
 .button {
   color: #fff;
-  /*width: 50%;*/
   font-weight: 700;
   display: block;
   text-align: center;
@@ -211,7 +232,7 @@ PORTFOLIO PAGE
 
 
 /*********************
-PAGE ABOUT
+ABOUT PAGE
 *********************/
 
 .profile-photo {
@@ -223,7 +244,7 @@ PAGE ABOUT
 
 
 /*********************
-PAGE CONTACT
+CONTACT PAGE
 *********************/
 
 .contact-info {

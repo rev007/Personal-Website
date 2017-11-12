@@ -6,26 +6,19 @@
     /*background: darkseagreen;*/
 /*}*/
 
-.photo {
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-}
+/*figure {*/
+    /*height: 100%;*/
+    /*display: flex;*/
+    /*flex-direction: column;*/
+    /*justify-content: flex-end;*/
+/*}*/
 
-figure {
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-}
+/*.title {*/
+    /*line-height: 2.5;*/
+/*}*/
 
-.title {
-    line-height: 2.5;
-}
-
-figcaption {
-    text-align: center;
-    line-height: 2.5;
-    color: #999;
-}
+/*figcaption {*/
+    /*text-align: center;*/
+    /*line-height: 2.5;*/
+    /*color: #999;*/
+/*}*/

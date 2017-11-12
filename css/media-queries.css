@@ -1,5 +1,7 @@
-/* TODO: remove pixel based media query */
-/*@media screen and (min-width: 480px) {*/
+/*********************
+MEDIA QUERIES
+*********************/
+
 @media screen and (min-width: 30em) {
 
   .social-icon {
@@ -7,7 +9,7 @@
   }
 
   /*********************
-  TWO COLUMN LAYOUT
+  CONTACT PAGE
   *********************/
 
   #primary {
@@ -30,20 +32,9 @@
   85% / 3 = 28.333% note that you should resist rounding numbers like these off
   *********************/
 
-  /*********************
-  PAGE PORTFOLIO
-  *********************/
-
-  /*#gallery li {*/
-    /*width: 28.3333%;*/
-  /*}*/
-
-  /*#gallery li:nth-child(4n) {*/
-    /*clear: left;*/
-  /*}*/
 
   /*********************
-  PAGE ABOUT
+  ABOUT PAGE
   *********************/
 
   .profile-photo {
@@ -53,7 +44,6 @@
 
 }
 
-/*@media screen and (min-width: 660px) {*/
 @media screen and (min-width: 41em) {
 
   /*********************
@@ -73,7 +63,6 @@
     float: left;
     margin-left: 5%;
     text-align: left;
-    /*width: 45%;*/
   }
 
   h1 {
@@ -81,7 +70,6 @@
   }
 
   h2 {
-    /*font-size: 0.825em;*/
     font-size: 1em;
     margin-bottom: 20px;
   }
@@ -92,10 +80,3 @@
   }
 
 }
-
-/*@media screen and (min-width: 1025px) {*/
-  /*.photo-overlay {*/
-    /*display: flex; !* using flex for ease of text centering *!*/
-  /*}*/
-
-/*}*/
