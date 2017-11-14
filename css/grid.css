@@ -1,4 +1,18 @@
 /*********************
+FLEXBOX LAYOUT
+*********************/
+
+.grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/*.grid > .card {*/
+    /*flex: 1;*/
+/*}*/
+
+/*********************
 GRID LAYOUT
 *********************/
 

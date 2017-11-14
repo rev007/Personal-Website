@@ -6,19 +6,18 @@
     /*background: darkseagreen;*/
 /*}*/
 
-/*figure {*/
-    /*height: 100%;*/
-    /*display: flex;*/
-    /*flex-direction: column;*/
-    /*justify-content: flex-end;*/
-/*}*/
+.card {
+    width: 30%;
+    margin: 10px;
+}
 
-/*.title {*/
-    /*line-height: 2.5;*/
-/*}*/
+@supports (display: grid) {
+    .card {
+        width: initial;
+        margin: initial;
+    }
 
-/*figcaption {*/
-    /*text-align: center;*/
-    /*line-height: 2.5;*/
-    /*color: #999;*/
-/*}*/
+    figure {
+        justify-content: flex-end;
+    }
+}
