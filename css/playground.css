@@ -6,6 +6,42 @@
     /*background: darkseagreen;*/
 /*}*/
 
+body {
+    font-family: "source-sans-pro",sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+h1,
+h2,
+h3 {
+    /*font-family: 'jubilat', serif;*/
+    font-family: "jubilat-thin",serif;
+}
+
+nav a {
+    font-weight: 600;
+    padding: 15px 10px;
+}
+
+.zork {
+    color: #999;
+}
+
+q::before {
+    content: "“";
+    color: #2fb88b;
+}
+
+q::after {
+    content: "”";
+    color: #2fb88b;
+}
+
+.button {
+    font-weight: 600;
+}
+
 .card {
     width: 30%;
     margin: 10px;

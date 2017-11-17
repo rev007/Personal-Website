@@ -7,7 +7,7 @@ GENERAL
 }
 
 body {
-  font-family: 'Open Sans', sans-serif; /* falls back to sans-serif if google is down */
+  /*font-family: 'Open Sans', sans-serif; !* falls back to sans-serif if google is down *!*/
   display: flex;
   flex-direction: column;
   min-height: 100vh;
