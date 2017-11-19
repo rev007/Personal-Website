@@ -15,8 +15,7 @@ body {
 h1,
 h2,
 h3 {
-    /*font-family: 'jubilat', serif;*/
-    font-family: "jubilat-thin",serif;
+    font-family: 'jubilat', serif;
 }
 
 nav a {
@@ -56,4 +55,28 @@ q::after {
     figure {
         justify-content: flex-end;
     }
+}
+
+/*@media screen and (min-width: 30em) {*/
+@media screen and (min-width: 480px) {
+
+    #home {
+        /*background: yellow;*/
+    }
+
+}
+
+/*@media screen and (min-width: 41em) {*/
+@media screen and (min-width: 656px) {
+
+    #home {
+        /*background: green;*/
+    }
+
+    h1,
+    h2,
+    h3 {
+        font-family: "jubilat-thin",serif;
+    }
+
 }
