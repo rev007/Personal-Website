@@ -50,17 +50,11 @@ header {
 }
 
 h1 {
-  font-family: 'Changa One', sans-serif; /* falls back to sans-serif if google is down */
   margin: 15px 0;
-  font-size: 1.75em; /* em is relative to default pixel size which usually is 16px */
-  font-weight: normal;
-  line-height: 0.8em;
 }
 
 h2 {
-  font-size: 0.75em;
   margin: -5px 0 0;
-  font-weight: normal;
 }
 
 
@@ -85,7 +79,6 @@ nav li {
 }
 
 nav a {
-  font-weight: 800;
   padding: 15px 10px;
 }
 
@@ -95,7 +88,6 @@ FOOTER
 *********************/
 
 footer {
-  font-size: 0.75em;
   text-align: center;
   padding-top: 50px;
   color: #ccc;

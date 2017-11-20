@@ -56,7 +56,6 @@ MEDIA QUERIES
   nav {
     background: none;
     float: right;
-    font-size: 1.25em;
     margin-right: 5%;
     text-align: right;
     width: 45%;
@@ -68,12 +67,7 @@ MEDIA QUERIES
     text-align: left;
   }
 
-  h1 {
-    font-size: 2.5em;
-  }
-
   h2 {
-    font-size: 1.1em;
     margin-bottom: 20px;
   }
 

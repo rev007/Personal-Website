@@ -21,7 +21,8 @@ GRID LAYOUT
     grid-gap: 1em;
 }
 
-@media screen and (min-width: 30em) {
+/*@media screen and (min-width: 30em) {*/
+@media screen and (min-width: 480px) {
 
     .grid {
         grid-template-columns: 1fr 1fr;
@@ -55,7 +56,8 @@ GRID LAYOUT
 
 }
 
-@media screen and (min-width: 41em) {
+/*@media screen and (min-width: 41em) {*/
+@media screen and (min-width: 656px) {
 
     .grid {
         grid-template-columns: 1fr 1fr 1fr;
