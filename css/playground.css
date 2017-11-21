@@ -4,6 +4,10 @@ body {
     font-style: normal;
 }
 
+#wrapper {
+    font-size: 15px;
+}
+
 /*********************
 HEADING
 *********************/
@@ -21,7 +25,7 @@ h1 {
 }
 
 h2 {
-    font-size: 0.75em;
+    font-size: 0.8em;
 }
 
 
@@ -39,12 +43,16 @@ FOOTER
 *********************/
 
 footer {
-    font-size: 0.75em;
+    font-size: 0.8em;
 }
 
 /*********************
 CARD
 *********************/
+
+.card {
+    font-size: 1rem;
+}
 
 .button {
     font-weight: 600;
@@ -56,21 +64,30 @@ MEDIA QUERIES
 *********************/
 
 /*@media screen and (min-width: 30em) {*/
-@media screen and (min-width: 480px) {
-}
+/*@media screen and (min-width: 480px) {*/
+/*}*/
 
-/*@media screen and (min-width: 41em) {*/
-@media screen and (min-width: 656px) {
 
-    body {
-        /*font-size: 18px;*/
+/*and (min-width : 768px)*/
+/*and (max-width : 1024px) {*/
+
+@media only screen and (min-width: 641px) { /* min-width 40.063em, medium screens */
+
+    /*body {*/
+        /*font-weight: 400;*/
+    /*}*/
+
+    /*h3 {*/
+        /*font-family: 'jubilat', serif;*/
+    /*}*/
+
+    #wrapper {
         font-weight: 300;
     }
 
     h1,
-    h2,
-    h3 {
-        font-family: "jubilat-thin",serif;
+    h2 {
+        font-family: 'jubilat-thin', serif;
     }
 
     h1 {
@@ -86,22 +103,41 @@ MEDIA QUERIES
     }
 
     #wrapper {
-        font-size: 20px;
+        font-size: 21px;
     }
 
 }
 
-@media screen
-and (min-device-width : 768px)
-and (max-device-width : 1024px) {
+/*@media screen and (min-width: 41em) {*/
+/*@media screen and (min-width: 656px) {*/
+
+@media only screen and (min-width: 1025px) { /* min-width 64.063em, large screens */
 
     body {
-        font-weight: 400;
+        /*font-size: 18px;*/
+        font-weight: 300;
     }
 
+    h1,
+    h2,
+    h3 {
+        font-family: "jubilat-thin",serif;
+    }
+
+    /*h1 {*/
+        /*font-size: 2.5em;*/
+    /*}*/
+
+    /*h2 {*/
+        /*font-size: 1.1em;*/
+    /*}*/
+
+    /*nav {*/
+        /*font-size: 1.25em;*/
+    /*}*/
+
     /*#wrapper {*/
-        /*font-size: 30px;*/
-        /*color: red;*/
+        /*font-size: 21px;*/
     /*}*/
 
 }
