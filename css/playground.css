@@ -2,6 +2,7 @@ body {
     font-family: "source-sans-pro",sans-serif;
     font-weight: 400;
     font-style: normal;
+    line-height: 1.45;
 }
 
 #wrapper {
