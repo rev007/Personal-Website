@@ -12,7 +12,7 @@ body {
     font-size: 15px;
 }
 
-.grid {
+#portfolio-grid {
     padding-top: 35px;
 }
 
@@ -26,12 +26,18 @@ header {
     z-index: 10;
 }
 
+header h1,
+header h2 {
+    color: #f8f7f2;
+}
+
 h1,
 h2,
 h3 {
     font-family: 'jubilat', serif;
     font-weight: 400;
-    color: #f8f7f2;
+    /*color: #f8f7f2;*/
+    color: #6d6e71;
 }
 
 h1 {
@@ -42,6 +48,11 @@ h1 {
 h2 {
     font-size: 0.8em;
 }
+
+.photo-overlay h3 {
+    color: #fff;
+}
+
 
 
 /*********************
@@ -110,6 +121,10 @@ figcaption,
     font-variant: small-caps;
 }
 
+.story-title {
+    text-align: center;
+}
+
 
 /*********************
 MEDIA QUERIES
@@ -132,6 +147,10 @@ MEDIA QUERIES
 
     h2 {
         font-size: 1.1em;
+    }
+
+    h3 {
+        font-weight: 600;
     }
 
     nav {
