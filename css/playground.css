@@ -53,6 +53,16 @@ h2 {
     color: #fff;
 }
 
+/* underline h3 */
+#story-grid h3 {
+    display: inline-block;
+    margin-bottom: 0;
+    background: linear-gradient(#acc9cb, #acc9cb) no-repeat;
+    background-size: 100% 3px;
+    background-position: 0 1.15em;
+    text-shadow: .05em 0 white, -.05em 0 white;
+}
+
 
 
 /*********************
