@@ -231,7 +231,8 @@ STORY PAGE
   max-width: 120px;
   margin: 10px auto 30px;
   border-radius: 7%;
-  border: 3px solid #acc9cb;
+  background: #acc9cb;
+  padding: 14px;
 }
 
 

@@ -21,18 +21,6 @@ GRID LAYOUT
     grid-gap: 1em;
 }
 
-#story-grid {
-    display: grid;
-    /*width: 100%;*/
-    /*max-width: 770px;*/
-    /*margin: 10% auto;*/
-    padding-top: 35px;
-    grid-template-columns: 1fr;
-    grid-template-rows: auto 200px 200px auto 200px 200px 200px auto 200px 200px auto;
-    /*grid-gap: 25px;*/
-    grid-gap: 1.5em;
-}
-
 /*@media screen and (min-width: 30em) {*/
 @media screen and (min-width: 480px) {
 

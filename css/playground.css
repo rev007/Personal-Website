@@ -1,9 +1,8 @@
 body {
-    font-family: "source-sans-pro",sans-serif;
+    font-family: "source-sans-pro", sans-serif;
     font-weight: 400;
     font-style: normal;
     line-height: 1.45;
-    /*color: #999;*/
     color: #6d6e71;
     background: #f8f7f2;
 }
@@ -133,6 +132,14 @@ figcaption,
 
 .story-title {
     text-align: center;
+    font: 600 1.5em "source-sans-pro", sans-serif;
+    /*font-weight: 600;*/
+    color: #acc9cb;
+    margin-bottom: 0;
+}
+
+.story-subtitle {
+    text-align: center;
 }
 
 
@@ -160,7 +167,7 @@ MEDIA QUERIES
     }
 
     h3 {
-        font-weight: 600;
+        /*font-weight: 600;*/
     }
 
     nav {
@@ -194,7 +201,7 @@ MEDIA QUERIES
     }
 
     .quote {
-        font-size: 2.8rem;
+        /*font-size: 2.8rem;*/
     }
 
     /*h1 {*/
@@ -225,3 +232,5 @@ MEDIA QUERIES
         justify-content: flex-end;
     }
 }
+
+
