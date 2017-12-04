@@ -7,7 +7,6 @@ GENERAL
 }
 
 body {
-  /*font-family: 'Open Sans', sans-serif; !* falls back to sans-serif if google is down *!*/
   display: flex;
   flex-direction: column;
   min-height: 100vh;
@@ -39,8 +38,7 @@ HEADING
 
 header {
   /*float: left;*/
-  margin: 0 0 30px 0;
-  padding: 5px 0 0 0;
+  padding: .3125em 0 0 0;
   width: 100%;
 }
 
@@ -50,11 +48,9 @@ header {
 }
 
 h1 {
-  margin: 15px 0;
 }
 
 h2 {
-  margin: -5px 0 0;
 }
 
 
@@ -64,8 +60,8 @@ NAVIGATION
 
 nav {
   text-align: center;
-  padding: 10px 0;
-  margin: 20px 0 0;
+  padding: .625em 0; /* 10px 0 */;
+  margin: 1.25em 0 0; /* 20px 0 0 */
 }
 
 nav ul {
@@ -88,9 +84,10 @@ FOOTER
 *********************/
 
 footer {
-  text-align: center;
-  padding-top: 50px;
-  color: #6d6e71;
+  /*text-align: center;*/
+  /*padding-top: 50px; !* 50px is desired padding-top on small screen *!*/
+  /*padding-top: 3.906em; !* 50px div 12.8px (font-size of footer at .8em) = 3.906 *!*/
+  /*color: #6d6e71;*/
 }
 
 .social-icon {
@@ -112,7 +109,7 @@ body {
 
 header {
   background: #2e7cc0;
-  border-color: #599a68;
+  /*border-color: #599a68;*/
 }
 
 /* home link text */
@@ -127,7 +124,6 @@ a {
 
 /* nav link */
 nav a, nav a:visited {
-  /*color: #fff;*/
   color: #f8f7f2;
 }
 
@@ -145,7 +141,7 @@ PORTFOLIO PAGE
 .profile-photo {
   display: block;
   max-width: 150px;
-  margin: 0 auto 30px;
+  margin: 0 auto 1.875em; /* 0 auto 30px */
   border-radius: 50%;
   border: 3px solid #acc9cb;
 }
@@ -229,10 +225,10 @@ STORY PAGE
 .story-football {
   display: block;
   max-width: 120px;
-  margin: 10px auto 30px;
+  margin: .625em auto 1.875em; /* 10px auto 30px */
   border-radius: 7%;
   background: #acc9cb;
-  padding: 14px;
+  padding: .875em; /* 14px */
 }
 
 
@@ -254,7 +250,7 @@ CONTACT PAGE
   background-repeat: no-repeat;
   background-size: 20px 20px;
   padding: 0 0 0 30px;
-  margin: 0 0 10px;
+  margin: 0 0 .6944em; /* 0 0 10px */
 }
 
 .contact-info li.phone a {
