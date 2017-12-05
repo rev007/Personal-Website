@@ -1,184 +1,36 @@
-html {
-    font-size: 100%;
-    line-height: 1;
-    -moz-text-size-adjust: 100%;
-    -ms-text-size-adjust: 100%;
-    -webkit-text-size-adjust: 100%;
-}
-
-body {
-    font-family: "source-sans-pro", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    /*line-height: 1.45;*/
-    color: #6d6e71;
-    background: #f8f7f2;
-}
-
-/*#wrapper {*/
-    /*font-size: 15px;*/
-/*}*/
-
-p {
-    font-size: .9375em; /* 15px eyeball (based on parent of 16px) */
-    /* line-height: 1.45; */ /* 21.75px eyeball (this number multiplied by the element's font size of 15px) */
-    line-height: 1.493; /* .9375em x 1.45 = 1.359375 = 1.4 scale... 1.4 div .9375em = 1.493 */
-
-    /*
-        our new scale = 1.4
-        3/4 scale = 1.05
-        1/2 scale = .7
-        1/4 scale = .35
-     */
-
-    margin: .7465em 0; /* 1/2 line-height */
-}
-
-#portfolio-grid {
-    padding-top: 2.1875em; /* 35px */
-}
 
 /*********************
 HEADING
 *********************/
-
-header {
-    position: fixed;
-    top: 0;
-    z-index: 10;
-}
-
-header h1,
-header h2 {
-    color: #f8f7f2;
-}
-
-h1,
-h2,
-h3 {
-    font-family: 'jubilat', serif;
-    font-weight: 400;
-    /*color: #f8f7f2;*/
-    color: #6d6e71;
-}
-
-h1 {
-    font-size: 1.75em;
-    line-height: .8;
-    margin: .5357em 0; /* 15px 0 */
-}
-
-h2 {
-    font-size: 0.8em;
-    margin: -.391em 0 0; /* -5px */
-}
-
-h3 {
-    font-size: 1.3125em; /* font size of our paragraph x our scale (.9375em x 1.4) */
-    line-height: 1.333; /* 1-1/4 x baseline = 1.75... 1.75 div 1.3125em  = 1.333 */
-}
-
-.photo-overlay h3 {
-    color: #fff;
-}
-
-/* underline h3 */
-#story-grid h3 {
-    display: inline-block;
-    margin-bottom: 0;
-    background: linear-gradient(#acc9cb, #acc9cb) no-repeat;
-    background-size: 100% 3px;
-    background-position: 0 1.15em;
-    text-shadow: .05em 0 white, -.05em 0 white;
-}
-
-
-
 /*********************
 NAVIGATION
 *********************/
-
-nav a {
-    font-weight: 600;
-}
-
 /*********************
 WRAPPER
 *********************/
-
-#wrapper {
-    padding-top: 10.625em; /* 170px */
-}
-
-
 /*********************
 FOOTER
 *********************/
-
-footer {
-    text-align: center;
-    /* padding-top: 50px; */ /* 50px is desired padding-top on small screen */
-    padding-top: 3.906em; /* 50px div 12.8px (font-size of footer at .8em) = 3.906 */
-}
-
-footer p {
-    font-size: 0.8em;
-    margin: 1em 0; /* margin size is based on font-size of the element... 1em = THIS element's set font size */
-    color: #6d6e71;
-}
-
 /*********************
 CARD
 *********************/
+/*********************
+HOLD FOR NOW
+*********************/
 
-.card {
-    font-size: 1rem;
-}
-
-.button {
-    font-weight: 600;
-}
+/* i lost track of what this was for. is it for fallback? */
+/*.card {*/
+    /*width: 30%;*/
+    /*margin: .625em; !* 10px *!*/
+/*}*/
 
 /*********************
 OTHER
 *********************/
 
-.quote {
-    font-size: 1.5em; /* 24px */
-    color: #6d6e71;
-}
 
-q::before {
-    content: "“";
-    color: #2fb88b;
-}
 
-q::after {
-    content: "”";
-    color: #2fb88b;
-}
 
-/* i lost track of what this was for. is it for fallback? */
-.card {
-    width: 30%;
-    margin: .625em; /* 10px */
-}
-
-figcaption,
-.small-cap {
-    font-variant: small-caps;
-}
-
-.story-title {
-    font: 600 1.5em "source-sans-pro", sans-serif;
-    text-align: center;
-    margin-top: -.2083em; /* -5px */
-    color: #acc9cb;
-}
-
-.story-subtitle {
-    text-align: center;
-}
 
 
 /*********************

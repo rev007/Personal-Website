@@ -6,17 +6,34 @@ GENERAL
 	box-sizing: border-box;
 }
 
+html {
+  font-size: 100%;
+  line-height: 1;
+  -moz-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
 body {
+  font-style: normal;
+  font-weight: 400;
+  font-family: "source-sans-pro", sans-serif;
   display: flex;
   flex-direction: column;
   min-height: 100vh;
 }
 
-#wrapper {
-  max-width: 940px;
-  margin: 0 auto;
-  padding: 0 5%;
-  flex: 1;
+p {
+  font-size: .9375em; /* 15px eyeball (based on parent of 16px) */
+  /* line-height: 1.45; */ /* 21.75px eyeball (this number multiplied by the element's font size of 15px) */
+  line-height: 1.493; /* .9375em x 1.45 = 1.359375 = 1.4 scale... 1.4 div .9375em = 1.493 */
+  margin: .7465em 0; /* 1/2 line-height */
+  /*
+      our new scale = 1.4
+      3/4 scale = 1.05
+      1/2 scale = .7
+      1/4 scale = .35
+   */
 }
 
 a {
@@ -27,17 +44,65 @@ img {
   max-width: 100%; /* fill images to the size of the parent container */
 }
 
+h1,
+h2,
 h3 {
+  font-family: 'jubilat', serif;
+  font-weight: 400;
+}
+
+h1 {
+  font-size: 1.75em;
+  line-height: .8;
+  margin: .5357em 0; /* 15px 0 */
+}
+
+h2 {
+  font-size: 0.8em;
+  margin: -.391em 0 0; /* -5px */
+}
+
+h3 {
+  font-size: 1.3125em; /* font size of our paragraph x our scale (.9375em x 1.4) */
+  line-height: 1.333; /* 1-1/4 x baseline = 1.75... 1.75 div 1.3125em  = 1.333 */
   margin: 0 0 1em 0;
 }
 
 
 /*********************
-HEADING
+PSEUDO-ELEMENTS
+*********************/
+
+q::before {
+  content: "“";
+  color: #2fb88b;
+}
+
+q::after {
+  content: "”";
+  color: #2fb88b;
+}
+
+
+/*********************
+OTHER
+*********************/
+
+figcaption,
+.small-cap {
+  font-variant: small-caps;
+}
+
+
+/*********************
+HEADER
 *********************/
 
 header {
   /*float: left;*/
+  position: fixed;
+  top: 0;
+  z-index: 10;
   padding: .3125em 0 0 0;
   width: 100%;
 }
@@ -45,12 +110,6 @@ header {
 #home {
   text-align: center;
   margin: 0;
-}
-
-h1 {
-}
-
-h2 {
 }
 
 
@@ -75,7 +134,21 @@ nav li {
 }
 
 nav a {
+  font-weight: 600;
   padding: 15px 10px;
+}
+
+
+/*********************
+WRAPPER
+*********************/
+
+#wrapper {
+  flex: 1;
+  max-width: 940px;
+  margin: 0 auto;
+  padding: 0 5%;
+  padding: 10.625em 5% 0; /* 170px 5% 0 */
 }
 
 
@@ -84,9 +157,14 @@ FOOTER
 *********************/
 
 footer {
-  /*text-align: center;*/
-  /*padding-top: 50px; !* 50px is desired padding-top on small screen *!*/
-  /*padding-top: 3.906em; !* 50px div 12.8px (font-size of footer at .8em) = 3.906 *!*/
+  text-align: center;
+  /* padding-top: 50px; */ /* 50px is desired padding-top on small screen */
+  padding-top: 3.125em; /* 50px div 16px (font-size of footer at 1em) = 3.125 */
+}
+
+footer p {
+  font-size: .8em;
+  margin: 1em 0; /* margin size is based on font-size of the element... 1em = THIS element's set font size */
   /*color: #6d6e71;*/
 }
 
@@ -103,18 +181,17 @@ COLORS
 
 /* site body */
 body {
-  background-color: #fff;
-  color: #999;
+  color: #6d6e71;
+  background-color: #f8f7f2;
 }
 
 header {
-  background: #2e7cc0;
-  /*border-color: #599a68;*/
+  background-color: hsla(207,61%,46%,.9);
 }
 
-/* home link text */
-h1, h2 {
-  color: #fff;
+h1,
+h2 {
+  color: #f8f7f2;
 }
 
 /* other links */
@@ -138,6 +215,11 @@ nav a.selected, nav a:hover {
 PORTFOLIO PAGE
 *********************/
 
+.quote {
+  font-size: 1.5em; /* 24px */
+  color: #6d6e71;
+}
+
 .profile-photo {
   display: block;
   max-width: 150px;
@@ -146,11 +228,14 @@ PORTFOLIO PAGE
   border: 3px solid #acc9cb;
 }
 
+/* TODO: See if you can remove font-size once your media queries are finalized */
 .card {
+  font-size: 1rem;
   position: relative; /* used to set photo's overlay position */
   overflow: hidden; /* prevents transforms outside of the container */
   border: solid #999;
   border-radius: .5em;
+  box-shadow: 0 5px 4px -4px black;
 }
 
 figure {
@@ -182,13 +267,18 @@ figcaption {
   bottom: 0;
   left: 0;
   text-align: center;
-  color: #fff;
+  color: white;
   background: rgba(0,0,0, .5);
   padding: .3em;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+.photo-overlay h3 {
+  font-size: 1.17em; /* returning to normalize.css value */
+  margin-bottom: 0;
 }
 
 /* overlay adjustments for images that are already dark */
@@ -202,13 +292,13 @@ figcaption {
 }
 
 /* ---- Buttons ---- */
-
 .button {
-  color: #fff;
-  font-weight: 700;
+  color: #f8f7f2;
+  font-weight: 600;
   display: block;
   text-align: center;
   text-decoration: none;
+  margin-top: 1em;
   padding: .3em .8em;
   background: #58a linear-gradient(hsla(0,0%,100%,.2), transparent);
   border-radius: .2em;
@@ -229,6 +319,27 @@ STORY PAGE
   border-radius: 7%;
   background: #acc9cb;
   padding: .875em; /* 14px */
+}
+
+.story-title {
+  font: 600 1.5em "source-sans-pro", sans-serif;
+  text-align: center;
+  margin-top: -.2083em; /* -5px */
+  color: #acc9cb;
+}
+
+.story-subtitle {
+  text-align: center;
+}
+
+/* underline h3 */
+#story-grid h3 {
+  display: inline-block;
+  margin-bottom: 0;
+  background: linear-gradient(#acc9cb, #acc9cb) no-repeat;
+  background-size: 100% 3px;
+  background-position: 0 1.15em;
+  text-shadow: .05em 0 white, -.05em 0 white;
 }
 
 
