@@ -15,6 +15,9 @@ FOOTER
 CARD
 *********************/
 /*********************
+OTHER
+*********************/
+/*********************
 HOLD FOR NOW
 *********************/
 
@@ -24,14 +27,6 @@ HOLD FOR NOW
     /*margin: .625em; !* 10px *!*/
 /*}*/
 
-/*********************
-OTHER
-*********************/
-
-
-
-
-
 
 /*********************
 MEDIA QUERIES
@@ -39,88 +34,21 @@ MEDIA QUERIES
 
 @media only screen and (min-width: 641px) { /* min-width 40.063em, medium screens */
 
-    #wrapper {
-        font-weight: 300;
-    }
+    /*#wrapper {*/
+        /*font-weight: 300;*/
+    /*}*/
 
-    h1,
-    h2 {
-        font-family: 'jubilat-thin', serif;
-    }
 
-    h1 {
-        font-size: 2.5em;
-    }
 
-    h2 {
-        font-size: 1.1em;
-    }
 
-    h3 {
-        /*font-weight: 600;*/
-    }
-
-    nav {
-        font-size: 1.25em;
-    }
-
-    #wrapper {
-        font-size: 21px;
-    }
-
-    .quote {
-        font-size: 2.5rem;
-    }
 
 }
 
 /*@media screen and (min-width: 41em) {*/
 /*@media screen and (min-width: 656px) {*/
 
-@media only screen and (min-width: 1025px) { /* min-width 64.063em, large screens */
 
-    body {
-        /*font-size: 18px;*/
-        font-weight: 300;
-    }
 
-    h1,
-    h2,
-    h3 {
-        font-family: "jubilat-thin",serif;
-    }
 
-    .quote {
-        /*font-size: 2.8rem;*/
-    }
-
-    /*h1 {*/
-        /*font-size: 2.5em;*/
-    /*}*/
-
-    /*h2 {*/
-        /*font-size: 1.1em;*/
-    /*}*/
-
-    /*nav {*/
-        /*font-size: 1.25em;*/
-    /*}*/
-
-    /*#wrapper {*/
-        /*font-size: 21px;*/
-    /*}*/
-
-}
-
-@supports (display: grid) {
-    .card {
-        width: initial;
-        margin: initial;
-    }
-
-    figure {
-        justify-content: flex-end;
-    }
-}
 
 

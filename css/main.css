@@ -187,6 +187,7 @@ body {
 
 header {
   background-color: hsla(207,61%,46%,.9);
+  border-bottom: 3px solid #acc9cb;
 }
 
 h1,

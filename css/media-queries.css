@@ -46,19 +46,16 @@ MEDIA QUERIES
 }
 
 /*@media screen and (min-width: 41em) {*/
-@media screen and (min-width: 656px) {
-
+/*@media screen and (min-width: 656px) {*/
+@media screen and (min-width: 641px) { /* min-width 40.063em, medium screens */
 
   /*********************
   HEADER
   *********************/
 
-  nav {
-    background: none;
-    float: right;
-    margin-right: 5%;
-    text-align: right;
-    width: 45%;
+  header {
+    border-bottom-width: 5px;
+    /*margin-bottom: 60px;*/
   }
 
   #home {
@@ -67,13 +64,57 @@ MEDIA QUERIES
     text-align: left;
   }
 
+  nav {
+    background: none;
+    float: right;
+    margin-right: 5%;
+    font-size: 1.25em;
+    text-align: right;
+    width: 45%;
+  }
+
+  h1,
   h2 {
+    font-family: 'jubilat-thin', serif;
+  }
+
+  /* TODO: See if you can get rid of these font size adjustments */
+
+  h1 {
+    font-size: 2.5em;
+  }
+
+  h2 {
+    font-size: 1.1em;
     margin-bottom: 20px;
   }
 
-  header {
-    border-bottom: 5px solid #acc9cb;
-    /*margin-bottom: 60px;*/
+  h3 {
+    /*font-weight: 600;*/
+  }
+
+  .quote {
+    font-size: 2.5rem;
+  }
+
+  #wrapper {
+    font-size: 21px;
+    font-weight: 300;
+  }
+
+}
+
+@media only screen and (min-width: 1025px) { /* min-width 64.063em, large screens */
+
+  body {
+    /*font-size: 18px;*/
+    font-weight: 300;
+  }
+
+  h1,
+  h2,
+  h3 {
+    font-family: "jubilat-thin",serif;
   }
 
 }
