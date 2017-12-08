@@ -13,7 +13,8 @@
     <link rel="stylesheet" href="css/interactions.css">
     <link rel="stylesheet" href="css/playground.css">
     <link rel="stylesheet" href="css/cartoon.css">
-    <link rel="stylesheet" href="http://basehold.it/22">
+    <link rel="stylesheet" href="css/print.css">
+    <!--<link rel="stylesheet" href="http://basehold.it/22">-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
   </head>
   <body>
@@ -32,26 +33,31 @@
     </header>
     <div id="wrapper">
       <section>
-        <img src="img/football.svg" alt="American Football" class="story-football">
         <h2 class="story-title">Football Squares the Game</h2>
         <h3 class="story-subtitle">An App Story</h3>
+        <img src="img/football.svg" alt="American Football" class="story-football">
         <p>Football Squares the Game was designed for the iPad and allows users to play football squares interactively. Instead
           of getting stuck with lousy squares after the initial drawing, players answer trivia questions and, if they’re
           correct, get rewarded with a free move to a new square!
         </p>
-        <p>Let’s go through the user experience (<span class="small-cap">ux</span>) design process and explain the overall goals for improving the product and
-          delivering a better user experience.
-        </p>
-        <p>All right, so we've all played football squares and we know what they are, right? If not, you can get a quick
-          primer here... otherwise it will be difficult to follow along.
+        <p>Let’s go through the user experience (<span class="small-cap">ux</span>) design process and explain the
+          overall goals for improving the product and delivering a better experience.
         </p>
       </section>
-      <div id="story-grid">
-        <div class="panel panel-title">
-          <h3>Research</h3>
-        </div>
+      <h3 class="underline">Research</h3>
+      <div class="print-grid">
+        <p>Okay, so we’ve all played football squares, and we know what they are, right? If not, your job is to do
+          a little research by getting a quick primer at <a href="https://ideas.evite.com/2009/01/its-hip-to-play-squares/" target="_blank">It’s Hip to Play Squares</a>.
+          Otherwise, you may find it difficult to follow along.
+        </p>
+        <p>Our research consists of defining the problem, performing a competitive analysis, and completing a discovery
+          phase with potential users. We want to figure out who might use our app and how they go about playing football
+          squares right now.
+        </p>
+      </div>
+      <div id="cartoon-grid">
         <div class="panel panel-x">
-          <p class="callout">“What’s the problem?”</p>
+          <p class="callout"><q>What’s the problem?</q></p>
         </div>
         <div class="panel panel-y"></div>
         <div class="panel panel-z"></div>
@@ -59,22 +65,19 @@
         <div class="panel panel-2"></div>
         <div class="panel panel-3">
           <p class="callout">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut
-            laoreet dolore magna aliquam erat volutpat.</p>
+            laoreet dolore magna.</p>
         </div>
-        <div class="panel panel-4"></div>
-        <div class="panel panel-5"></div>
-        <div class="panel panel-6"></div>
-        <div class="panel panel-7">
-          <p class="callout">Under construction!</p>
-        </div>
-        <div class="panel panel-8"></div>
-        <div class="panel panel-9"></div>
+        <!--<div class="panel panel-4"></div>-->
+        <!--<div class="panel panel-5"></div>-->
+        <!--<div class="panel panel-6"></div>-->
         <div class="panel panel-copyright">
           <p>This page is currently being developed. We're going to make some fun CSS Grid stuff happen here while we
             explore the subconscious and cognitive loads of playing what seems like an easy game. Wow! I can't wait. You
             can see more code-related projects by visiting my <a href="https://profiles.udacity.com/p/8804555838">Udacity Profile</a>.
           </p>
         </div>
+      </div>
+      <div class="print-grid">
         <h3>Premise</h3>
         <p>The conceptual model is a 1950s <a href="http://www.retroland.com/electric-football/" target="_blank">electric football</a>
           game where player tokens vibrate randomly along a smooth metallic gridiron. In our case, the tokens

@@ -54,12 +54,14 @@ h3 {
 h1 {
   font-size: 1.75em;
   line-height: .8;
-  margin: .5357em 0; /* 15px 0 */
+  /* margin: .5357em 0; */ /* 15px 0 */
+  margin: .5357em 0 10px; /* 15px 0 */
 }
 
 h2 {
   font-size: 0.8em;
-  margin: -.391em 0 0; /* -5px */
+  /* margin: -.391em 0 0; */ /* -5px */
+  margin: 0 0 0; /* -5px */
 }
 
 h3 {
@@ -103,7 +105,8 @@ header {
   position: fixed;
   top: 0;
   z-index: 10;
-  padding: .3125em 0 0 0;
+  /*padding: .3125em 0 1.3125em 0;*/
+  padding: 0 0 .6875em 0;
   width: 100%;
 }
 
@@ -119,8 +122,9 @@ NAVIGATION
 
 nav {
   text-align: center;
-  padding: .625em 0; /* 10px 0 */;
-  margin: 1.25em 0 0; /* 20px 0 0 */
+  /* padding: .625em 0; */ /* 10px 0 */;
+  /*margin: 1.25em 0 0; !* 20px 0 0 *!*/
+  margin: 1.875em 0 0; /* 30px 0 0 */
 }
 
 nav ul {
@@ -147,8 +151,7 @@ WRAPPER
   flex: 1;
   max-width: 940px;
   margin: 0 auto;
-  padding: 0 5%;
-  padding: 10.625em 5% 0; /* 170px 5% 0 */
+  padding: 9.625em 5% 0; /* 154px 5% 0 */
 }
 
 
@@ -163,7 +166,7 @@ footer {
 }
 
 footer p {
-  font-size: .8em;
+  font-size: .7em;
   margin: 1em 0; /* margin size is based on font-size of the element... 1em = THIS element's set font size */
   /*color: #6d6e71;*/
 }
@@ -186,7 +189,7 @@ body {
 }
 
 header {
-  background-color: hsla(207,61%,46%,.9);
+  background-color: hsla(207,61%,46%,.95);
   border-bottom: 3px solid #acc9cb;
 }
 
@@ -315,7 +318,7 @@ STORY PAGE
 
 .story-football {
   display: block;
-  max-width: 120px;
+  max-width: 90px;
   margin: .625em auto 1.875em; /* 10px auto 30px */
   border-radius: 7%;
   background: #acc9cb;
@@ -333,14 +336,13 @@ STORY PAGE
   text-align: center;
 }
 
-/* underline h3 */
-#story-grid h3 {
+.underline {
   display: inline-block;
   margin-bottom: 0;
   background: linear-gradient(#acc9cb, #acc9cb) no-repeat;
   background-size: 100% 3px;
-  background-position: 0 1.15em;
-  text-shadow: .05em 0 white, -.05em 0 white;
+  background-position: 0 1.1em;
+  text-shadow: .05em 0 white, -.05em 0 white; /* respects descenders */
 }
 
 
