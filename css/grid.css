@@ -28,7 +28,8 @@ GRID LAYOUT
         margin: initial;
     }
 
-    figure {
+    .card figure {
+        height: 100%;
         justify-content: flex-end;
     }
 }
@@ -48,7 +49,7 @@ GRID LAYOUT
         grid-row: 1 / 3;
     }
 
-    .mockup {
+    .sprint {
         grid-row: 3 / 6;
     }
 
@@ -83,7 +84,7 @@ GRID LAYOUT
         grid-row: 1 / 3;
     }
 
-    .mockup {
+    .sprint {
         grid-row: 1 / 4;
     }
 

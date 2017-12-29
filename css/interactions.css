@@ -26,8 +26,8 @@ img {
     transform: scale(1.24);
 }
 
-/* scale mockup less so it doesn't overlap adjacent card */
-.card:hover .mockup {
+/* scale design sprint less so it doesn't overlap adjacent card */
+.card:hover .sprint {
     transform: scale(1.7);
 }
 

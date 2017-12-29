@@ -17,7 +17,8 @@ GRID LAYOUT
     /*width: 100%;*/
     max-width: 700px;
     /* TODO: Change to ems */
-    margin: 0 auto 10%;
+    /*margin: 0 auto 10%;*/
+    margin: 0 auto 2.1875em;
     /*padding-top: 35px;*/
     grid-template-columns: 1fr;
     grid-template-rows: auto 200px 200px 200px 200px auto auto;
