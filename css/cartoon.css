@@ -5,7 +5,7 @@ FLEXBOX LAYOUT
 #cartoon-grid {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-between;
 }
 
 /*********************
@@ -14,7 +14,6 @@ GRID LAYOUT
 
 #cartoon-grid {
     display: grid;
-    /*width: 100%;*/
     max-width: 700px;
     /* TODO: Change to ems */
     /*margin: 0 auto 10%;*/
@@ -25,6 +24,15 @@ GRID LAYOUT
     /*                  x,   y,    z,    1,    2,    3,   copyright */
     /*grid-gap: 25px;*/
     grid-gap: 1.5em;
+}
+
+@supports (display: grid) {
+    /* remove flexbox adjustments */
+    .panel {
+        margin: 0;
+        height: auto;
+        width: auto;
+    }
 }
 
 /*********************
@@ -101,220 +109,12 @@ PANELS
 MEDIA QUERIES
 *********************/
 
-@media only screen and (min-width: 400px) {
-
-    .grid-1 {
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: auto 200px auto 200px 200px auto 200px auto;
-    }
-    .panel-title,
-    .panel-3,
-    .panel-6,
-    .panel-7,
-    .panel-copyright {
-        grid-column: span 2;
-    }
-    .panel-copyright {
-        text-align: right;
-    }
-    .panel-7 {
-        text-align: center;
-    }
-    /*h1 {*/
-    /*font-size: 3em;*/
-    /*}*/
-
-}
-
-/*@media only screen and (min-width: 600px) {*/
-
-    /*#cartoon-grid {*/
-        /*grid-template-columns: repeat(3, 1fr);*/
-        /*grid-template-rows: auto 200px 200px 200px auto;*/
-    /*}*/
-
-    /*.panel-title,*/
-    /*.panel-copyright {*/
-        /*grid-column: span 3;*/
-    /*}*/
-
-    /*.panel-3,*/
-    /*.panel-6 {*/
-        /*grid-column: auto;*/
-    /*}*/
-
-    /*.panel-8 {*/
-        /*grid-column: span 2;*/
-    /*}*/
-
-    /*!* flexbox centering *!*/
-    /*.panel-3 {*/
-        /*display: flex;*/
-        /*align-items: center;*/
-    /*}*/
-
-    /*!* layering *!*/
-    /*.panel-7 {*/
-        /*grid-column: 1;*/
-        /*grid-row: 4;*/
-        /*z-index: 1;*/
-        /*margin: -5px 0 0 -10px; !* -5px 0 0 -10px *!*/
-        /*transform: rotate(-2deg);*/
-    /*}*/
-
-    /*.panel-7 p {*/
-        /*background: #f8f7f2;*/
-        /*box-shadow: 0 0px 0px 5px #094031;*/
-        /*text-align: left;*/
-    /*}*/
-
-    /*.panel-x {*/
-        /*grid-column: 1;*/
-        /*grid-row: 2;*/
-        /*z-index: 1;*/
-        /*margin: -5px 0 0 -10px;*/
-        /*transform: rotate(-2deg);*/
-    /*}*/
-
-    /*.panel-x p {*/
-        /*background: #f8f7f2;*/
-        /*box-shadow: 0 0px 0px 5px #094031;*/
-        /*text-align: left;*/
-    /*}*/
-
-    /*.panel-8 {*/
-        /*grid-column: 1 / span 2;*/
-        /*grid-row: 4;*/
-        /*background-size: 70%;*/
-        /*background-position: right;*/
-    /*}*/
-
-    /*.panel-y {*/
-        /*grid-column: 1 / span 2;*/
-        /*grid-row: 2;*/
-        /*background-size: 70%;*/
-        /*background-position: right;*/
-    /*}*/
-
-/*}*/
-
-/*@media only screen and (min-width: 600px) {*/
-
-    /*#cartoon-grid {*/
-        /*grid-template-columns: repeat(3, 1fr);*/
-        /*!*grid-template-rows: auto 200px 200px 200px auto;*!*/
-        /*grid-template-rows: 200px 200px 200px 200px 200px 200px 200px;*/
-    /*}*/
-
-    /*.panel-title,*/
-    /*.panel-copyright {*/
-        /*grid-column: span 3;*/
-    /*}*/
-
-    /*.panel-3,*/
-    /*.panel-6 {*/
-        /*grid-column: auto;*/
-    /*}*/
-
-    /*.panel-8 {*/
-        /*grid-column: span 2;*/
-    /*}*/
-
-    /*!* flexbox centering *!*/
-    /*.panel-3 {*/
-        /*display: flex;*/
-        /*align-items: center;*/
-    /*}*/
-
-    /*!* layering *!*/
-    /*.panel-7 {*/
-        /*grid-column: 1;*/
-        /*grid-row: 4;*/
-        /*z-index: 1;*/
-        /*margin: -5px 0 0 -10px; !* -5px 0 0 -10px *!*/
-        /*transform: rotate(-2deg);*/
-    /*}*/
-
-    /*.panel-7 p {*/
-        /*background: #f8f7f2;*/
-        /*box-shadow: 0 0px 0px 5px #094031;*/
-        /*text-align: left;*/
-    /*}*/
-
-    /*.panel-x {*/
-        /*grid-column: 1;*/
-        /*grid-row: 2;*/
-        /*z-index: 1;*/
-        /*margin: -5px 0 0 -10px;*/
-        /*transform: rotate(-2deg);*/
-    /*}*/
-
-    /*.panel-x p {*/
-        /*background: #f8f7f2;*/
-        /*box-shadow: 0 0px 0px 5px #094031;*/
-        /*text-align: left;*/
-    /*}*/
-
-    /*.panel-8 {*/
-        /*grid-column: 1 / span 2;*/
-        /*grid-row: 4;*/
-        /*background-size: 70%;*/
-        /*background-position: right;*/
-    /*}*/
-
-    /*.panel-y {*/
-        /*grid-column: 1 / span 2;*/
-        /*grid-row: 2;*/
-        /*background-size: 70%;*/
-        /*background-position: right;*/
-    /*}*/
-
-/*}*/
-
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 500px) { /* was 768px */
 
     #cartoon-grid {
-        grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: 200px 200px auto;
-        margin-top: .7465em; /* same value as a paragraph */
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 200px 200px 200px auto;
     }
-
-    /*.panel-title,*/
-    .panel-copyright {
-        grid-column: span 3;
-    }
-
-    .panel-3,
-    .panel-6 {
-        grid-column: auto;
-    }
-
-    /* flexbox centering */
-    .panel-3 {
-        display: flex;
-        align-items: center;
-    }
-
-    .panel-8 {
-        grid-column: span 2;
-    }
-
-
-
-    /* layering */
-    /*.panel-7 {*/
-        /*grid-column: 1;*/
-        /*grid-row: 4;*/
-        /*z-index: 1;*/
-        /*margin: -5px 0 0 -10px; !* -5px 0 0 -10px *!*/
-        /*transform: rotate(-2deg);*/
-    /*}*/
-
-    /*.panel-7 p {*/
-        /*background: #f8f7f2;*/
-        /*box-shadow: 0 0px 0px 5px #094031;*/
-        /*text-align: left;*/
-    /*}*/
 
     .panel-x {
         grid-column: 1;
@@ -328,20 +128,43 @@ MEDIA QUERIES
         background: #f8f7f2;
         box-shadow: 0 0px 0px 5px #094031;
         text-align: left;
+        margin-right: 126px;
     }
-
-    /*.panel-8 {*/
-        /*grid-column: 1 / span 2;*/
-        /*grid-row: 4;*/
-        /*background-size: 70%;*/
-        /*background-position: right;*/
-    /*}*/
 
     .panel-y {
         grid-column: 1 / span 2;
         grid-row: 1;
         background-size: 70%;
         background-position: right;
+    }
+
+    /* flexbox centering */
+    .panel-3 {
+        display: flex;
+        align-items: center;
+    }
+
+    .panel-copyright {
+        grid-column: span 2;
+        text-align: right;
+    }
+
+}
+
+@media only screen and (min-width: 992px) { /* was 600px */
+
+    #cartoon-grid {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 200px 200px auto;
+        margin-top: .7465em; /* same value as a paragraph */
+    }
+
+    .panel-x p {
+        margin: 0;
+    }
+
+    .panel-copyright {
+        grid-column: span 3;
     }
 
 }

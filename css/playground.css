@@ -50,6 +50,11 @@ CARTOON
 .panel p {
     margin: 0;
 }
+.panel {
+    margin: 5px 0;
+    height: 200px;
+    width: 90vw;
+}
 /*********************
 PRINT
 *********************/
@@ -82,7 +87,7 @@ HOLD FOR NOW
 MEDIA QUERIES
 *********************/
 
-@media only screen and (min-width: 641px) { /* min-width 40.063em, medium screens */
+@media only screen and (min-width: 768px) { /* was 641px */
 
     header {
         padding-bottom: 1.116em; /* 25px */
@@ -125,7 +130,7 @@ MEDIA QUERIES
 /*@media screen and (min-width: 41em) {*/
 /*@media screen and (min-width: 656px) {*/
 
-@media only screen and (min-width: 1025px) { /* min-width 64.063em, large screens */
+@media only screen and (min-width: 992px) { /* was 1025px */
 
     #wrapper {
         padding-top: 185px;

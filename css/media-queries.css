@@ -45,13 +45,11 @@ MEDIA QUERIES
 
 }
 
-/*@media screen and (min-width: 41em) {*/
-/*@media screen and (min-width: 656px) {*/
-@media screen and (min-width: 641px) { /* min-width 40.063em, medium screens */
+@media screen and (min-width: 768px) { /* was 641px */
 
-  /*********************
-  HEADER
-  *********************/
+    /*********************
+    HEADER
+    *********************/
 
   header {
     border-bottom-width: 5px;
@@ -86,16 +84,14 @@ MEDIA QUERIES
   }
 
   #wrapper {
-    /*font-size: 21px;*/
     font-weight: 300;
   }
 
 }
 
-@media only screen and (min-width: 1025px) { /* min-width 64.063em, large screens */
+@media only screen and (min-width: 992px) { /* was 1025px */
 
   body {
-    /*font-size: 18px;*/
     font-weight: 300;
   }
 

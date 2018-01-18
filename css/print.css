@@ -23,10 +23,9 @@ GRID LAYOUT
 @supports (display: grid) {
 }
 
-/*@media screen and (min-width: 30em) {*/
-@media screen and (min-width: 480px) {
+@media only screen and (min-width: 768px) { /* was 480px */
 
-    .print-grid {
+        .print-grid {
         grid-template-columns: 1fr 1fr;
     }
 
